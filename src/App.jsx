@@ -1,7 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import ProfilePage from "./pages/Profile";
+import LoginPage from "./pages/Login";
+
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello This is My App</h1>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/profile" element={<ProfilePage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

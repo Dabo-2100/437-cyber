@@ -1,0 +1,73 @@
+/* Scoped css */
+.myHeader {
+    background-color: white;
+    padding: 16px 0;
+
+    .iconSearch {
+        top: 16px;
+        left: 1rem;
+        font-size: 24px;
+
+        @media screen and (max-width :767px) {
+            display: none;
+        }
+    }
+
+    input {
+        background-color: #F5F5F5;
+        width: 372px;
+        border-radius: 8px;
+        padding: 16px;
+        color: #656565;
+        border: 0;
+        outline: 0;
+        padding-left: 3rem;
+
+        @media screen and (max-width :767px) {
+            display: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 52px;
+
+        @media screen and (max-width :767px) {
+            display: none;
+        }
+
+        a {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18.75px;
+            letter-spacing: 0%;
+            color: rgba(128, 128, 128, 0.74);
+            text-decoration: none;
+        }
+
+        a.active {
+            color: black
+        }
+    }
+
+    .menuIcon {
+        display: none;
+
+        @media screen and (max-width :767px) {
+            display: block;
+        }
+    }
+
+    #iconWraper {
+        display: flex;
+
+        .icon {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width :767px) {
+            display: none;
+        }
+    }
+}
